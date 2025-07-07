@@ -1,0 +1,51 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+      # Prevent Directory Browsing (optional)
+    <IfModule mod_autoindex.c>
+      Options -Indexes
+    </IfModule>
+
+    # Handle ETag Header (optional, improves caching)
+    Header unset ETag
+    FileETag None
+</IfModule>
+
+# Additional Security Headers
+<IfModule mod_headers.c>
+    # Prevent Content Sniffing
+    Header set X-Content-Type-Options "nosniff"
+
+    # Disable Clickjacking
+    Header always set X-Frame-Options "DENY"
+
+    # Set Strict Transport Security (HSTS)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # XSS Protection
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Cache Control Headers for Static Files
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|woff|woff2|ttf|eot)$">
+        Header set Cache-Control "public, max-age=1296000"
+    </FilesMatch>
+
+</IfModule>

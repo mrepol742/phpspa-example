@@ -1,0 +1,82 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5c80107521a0680d4c6e7f85ececfadb",
+    "packages": [
+        {
+            "name": "dconco/phpspa",
+            "version": "v1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dconco/phpspa.git",
+                "reference": "e94aae6cd91d86b73a26dfbab65d170c22d9a6a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dconco/phpspa/zipball/e94aae6cd91d86b73a26dfbab65d170c22d9a6a5",
+                "reference": "e94aae6cd91d86b73a26dfbab65d170c22d9a6a5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "app/client/Component/createState.php",
+                    "app/client/Component/HTMLAttrInArrayToString.php",
+                    "app/client/Component/import.php",
+                    "app/client/Component/Link.php",
+                    "app/client/Component/Navigate.php",
+                    "app/core/Impl/Const/StateConstant.php",
+                    "app/client/Http/Redirect.php"
+                ],
+                "psr-4": {
+                    "phpSPA\\": "app/client/",
+                    "phpSPA\\Core\\": "app/core/",
+                    "phpSPA\\Exceptions\\": "app/exceptions/",
+                    "phpSPA\\Interfaces\\": "app/interfaces/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Conco",
+                    "email": "concodave@gmail.com",
+                    "homepage": "https://dconco.dev",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A lightweight, component-based PHP library for building Single Page Applications (SPAs) without relying on heavy frontend frameworks.",
+            "keywords": [
+                "JS",
+                "SPA",
+                "component-library",
+                "javascript",
+                "jsx",
+                "php",
+                "phpspa"
+            ],
+            "support": {
+                "issues": "https://github.com/dconco/phpspa/issues",
+                "source": "https://github.com/dconco/phpspa/tree/v1.1.4"
+            },
+            "time": "2025-07-02T13:23:08+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}
