@@ -1,6 +1,8 @@
 <?php
 
-return fn () => <<<HTML
+use phpSPA\Component;
+
+return (new Component(fn () => <<<HTML
     <div class="container">
         <div class="p-5 mb-4 bg-light rounded-3">
             <div class="container-fluid py-5">
@@ -48,4 +50,7 @@ return fn () => <<<HTML
             </div>
         </div>
     </div>
-HTML;
+HTML))
+    ->title('Home Page')
+    ->method('GET')
+    ->route('/')
