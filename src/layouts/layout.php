@@ -3,9 +3,7 @@
 require_once './components/navbar.php';
 require_once './components/footer.php';
 
-function layout()
-{
-   return <<<HTML
+return fn() => <<<HTML
     <html>
         <head>
             <title>PHPSPA Example</title>
@@ -23,5 +21,4 @@ function layout()
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         </body>
     </html>
-    HTML;
-}
+HTML;
