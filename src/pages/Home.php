@@ -1,8 +1,6 @@
 <?php
 
-function Home()
-{
-    return <<<HTML
+return fn () => <<<HTML
     <div class="container">
         <div class="p-5 mb-4 bg-light rounded-3">
             <div class="container-fluid py-5">
@@ -50,5 +48,4 @@ function Home()
             </div>
         </div>
     </div>
-    HTML;
-}
+HTML;
