@@ -53,4 +53,4 @@ return (new Component(fn () => <<<HTML
 HTML))
     ->title('Home Page')
     ->method('GET')
-    ->route('/')
+    ->route('/');
