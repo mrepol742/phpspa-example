@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "dconco/phpspa",
-            "version": "v1.1.4",
+            "version": "v1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dconco/phpspa.git",
-                "reference": "e94aae6cd91d86b73a26dfbab65d170c22d9a6a5"
+                "reference": "807a0502615314606c9c85bde4549ca85d6e3fb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dconco/phpspa/zipball/e94aae6cd91d86b73a26dfbab65d170c22d9a6a5",
-                "reference": "e94aae6cd91d86b73a26dfbab65d170c22d9a6a5",
+                "url": "https://api.github.com/repos/dconco/phpspa/zipball/807a0502615314606c9c85bde4549ca85d6e3fb2",
+                "reference": "807a0502615314606c9c85bde4549ca85d6e3fb2",
                 "shasum": ""
             },
             "require": {
@@ -26,12 +26,8 @@
             "type": "library",
             "autoload": {
                 "files": [
-                    "app/client/Component/createState.php",
-                    "app/client/Component/HTMLAttrInArrayToString.php",
-                    "app/client/Component/import.php",
-                    "app/client/Component/Link.php",
-                    "app/client/Component/Navigate.php",
                     "app/core/Impl/Const/StateConstant.php",
+                    "app/client/Component/Component.php",
                     "app/client/Http/Redirect.php"
                 ],
                 "psr-4": {
@@ -49,25 +45,24 @@
                 {
                     "name": "Dave Conco",
                     "email": "concodave@gmail.com",
-                    "homepage": "https://dconco.dev",
+                    "homepage": "https://dconco.github.io",
                     "role": "Developer"
                 }
             ],
             "description": "A lightweight, component-based PHP library for building Single Page Applications (SPAs) without relying on heavy frontend frameworks.",
             "keywords": [
-                "JS",
                 "SPA",
+                "component-based",
                 "component-library",
-                "javascript",
                 "jsx",
                 "php",
                 "phpspa"
             ],
             "support": {
                 "issues": "https://github.com/dconco/phpspa/issues",
-                "source": "https://github.com/dconco/phpspa/tree/v1.1.4"
+                "source": "https://github.com/dconco/phpspa/tree/v1.1.5"
             },
-            "time": "2025-07-02T13:23:08+00:00"
+            "time": "2025-08-20T16:48:58+00:00"
         }
     ],
     "packages-dev": [],

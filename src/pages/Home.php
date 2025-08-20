@@ -2,6 +2,11 @@
 
 use phpSPA\Component;
 
+function Lists($children)
+{
+    return "<li class=\"list-group-item\">{$children}</li>";
+}
+
 return (new Component(fn () => <<<HTML
     <div class="container">
         <div class="p-5 mb-4 bg-light rounded-3">
@@ -32,9 +37,9 @@ return (new Component(fn () => <<<HTML
                         Latest News
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">PHP SPA v1.0 released!</li>
-                        <li class="list-group-item">Bootstrap 5 integration complete.</li>
-                        <li class="list-group-item">New documentation available.</li>
+                        <Lists>PHP SPA v1.0 released!</Lists>
+                        <Lists>Bootstrap 5 integration complete.</Lists>
+                        <Lists>New documentation available.</Lists>
                     </ul>
                 </div>
             </div>
