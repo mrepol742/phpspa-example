@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c80107521a0680d4c6e7f85ececfadb",
+    "content-hash": "834d4b2c8853fa2114f5436e3fc006b5",
     "packages": [
         {
             "name": "dconco/phpspa",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dconco/phpspa.git",
-                "reference": "807a0502615314606c9c85bde4549ca85d6e3fb2"
+                "reference": "fbb28bd4a3e3bf120a62825c6c82d685467256cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dconco/phpspa/zipball/807a0502615314606c9c85bde4549ca85d6e3fb2",
-                "reference": "807a0502615314606c9c85bde4549ca85d6e3fb2",
+                "url": "https://api.github.com/repos/dconco/phpspa/zipball/fbb28bd4a3e3bf120a62825c6c82d685467256cd",
+                "reference": "fbb28bd4a3e3bf120a62825c6c82d685467256cd",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 "issues": "https://github.com/dconco/phpspa/issues",
                 "source": "https://github.com/dconco/phpspa/tree/v1.1.5"
             },
-            "time": "2025-08-20T16:48:58+00:00"
+            "time": "2025-08-21T04:22:28+00:00"
         }
     ],
     "packages-dev": [],

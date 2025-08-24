@@ -1,15 +1,15 @@
 <?php
 
-require '../vendor/autoload.php';
+require "../vendor/autoload.php";
 
 use phpSPA\App;
 use phpSPA\Compression\Compressor;
 
-$app = new App(require './layouts/layout.php');
+$app = new App(require "./layouts/Layout.php");
 
-$app->defaultTargetID('app')
-   ->compression(Compressor::LEVEL_AUTO, false)
-   ->attach(require './pages/Home.php')
-   ->cors()
+$app->defaultTargetID("app")
+    ->compression(Compressor::LEVEL_AUTO, false)
+    ->attach(require "./pages/Home.php")
+    ->cors()
 
-   ->run();
+    ->run();
