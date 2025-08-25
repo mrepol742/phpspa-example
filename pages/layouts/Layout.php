@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . "/components/Navbar.php";
-require_once __DIR__ . "/components/Footer.php";
+require_once "pages/layouts/components/Navbar.php";
+require_once "pages/layouts/components/Footer.php";
 
 function Layout()
 {
