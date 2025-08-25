@@ -1,6 +1,6 @@
 <?php
 
-include_once './components/ListItem.php';
+include_once __DIR__ . '/ListItem.php';
 
 function Footer()
 {
